@@ -1,0 +1,49 @@
+{
+  "name": "AI Salon Receptionist - Sanitized Template",
+  "nodes": [
+    {
+      "name": "Chat Trigger",
+      "type": "n8n-nodes-base.chatTrigger"
+    },
+    {
+      "name": "Get Business Details",
+      "type": "n8n-nodes-base.googleSheets"
+    },
+    {
+      "name": "AI Receptionist",
+      "type": "n8n-nodes-base.aiAgent"
+    },
+    {
+      "name": "GenerateBookingID",
+      "type": "n8n-nodes-base.code"
+    },
+    {
+      "name": "LookupBookingByID",
+      "type": "n8n-nodes-base.googleSheets"
+    },
+    {
+      "name": "Append or update row in sheet",
+      "type": "n8n-nodes-base.googleSheets"
+    },
+    {
+      "name": "Book Calendar Appointment",
+      "type": "n8n-nodes-base.googleCalendar"
+    },
+    {
+      "name": "Update Calendar Event",
+      "type": "n8n-nodes-base.googleCalendar"
+    },
+    {
+      "name": "Delete Calendar Event",
+      "type": "n8n-nodes-base.googleCalendar"
+    },
+    {
+      "name": "Get many events in Google Calendar",
+      "type": "n8n-nodes-base.googleCalendar"
+    }
+  ],
+  "active": false,
+  "meta": {
+    "instanceName": "AI Salon Receptionist Template"
+  }
+}
